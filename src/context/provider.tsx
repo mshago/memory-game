@@ -25,7 +25,6 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
   const [score, setScore] = useState(initialState.score);
   const [status, setStatus] = useState(initialState.status);
   const [timer, setTimer] = useState(initialState.timer);
-  const [isValidating, setIsValidating] = useState(initialState.isValidating);
 
   const handleOnClickCard = (cardId: number) => {
     if (cards.find((_card) => _card.id === cardId)?.flipped) {
@@ -124,7 +123,6 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
       value={{
         attempts,
         cards,
-        isValidating,
         pairs,
         selectedCards,
         score,

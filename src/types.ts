@@ -10,7 +10,6 @@ export enum GAME_STATUS {
 export type GameContextType = {
   attempts: number;
   cards: CardType[];
-  isValidating: boolean;
   pairs: number;
   selectedCards: CardType[];
   score: number;

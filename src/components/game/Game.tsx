@@ -7,7 +7,6 @@ function Game() {
   const {
     attempts,
     cards,
-    isValidating,
     pairs,
     score,
     selectedCards,
@@ -54,7 +53,6 @@ function Game() {
     }
   }, [cards, status, finishGame]);
 
-  console.log('aaaa', isValidating);
   return (
     <div className="container">
       <h1>Memory Game</h1>
